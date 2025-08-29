@@ -1,12 +1,45 @@
-# React + Vite
+# Book Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web app to search books via the Google Books API, view details, and manage favorite books.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multi-field book search: title, author, genre/keyword
+- Responsive displays and accessible navigation
+- Book details with lazy loading for performance
+- Favorites management using React Context API
+- Routing with React Router
+- Form validation and error messages
+- Memoization and code-splitting for speed
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. `git clone https://github.com/naimish611/Coding-Challenge`
+2. `cd Coding-Challenge`
+3. `npm install`
+4. `npm start`
+
+
+
+## Structure
+
+- **components/** UI logic
+- **context/** global state
+- **api/** API integration
+
+## Performance
+
+- Uses `React.memo` and `useMemo` to reduce renders
+- Book details page is lazily loaded (`React.lazy`/`Suspense`)
+- Details in code comments
+
+## Approach
+
+- Routing via React Router
+- Controlled form logic for search and favorites
+- Context API for state
+- Tradeoff: avoided Redux for simplicity
+
+---
+
+Project by [Your Name]. For questions, see discussions or issues.
